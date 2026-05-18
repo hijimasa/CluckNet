@@ -2,6 +2,8 @@
 
 [English](README.md) | **日本語**
 
+![Demo](./figs/CluckNet_demo.webp)
+
 > Minecraft 上で [RFC 1149「鳥類キャリアによる IP データグラム送信規格」](https://datatracker.ietf.org/doc/html/rfc1149) を実装したもの。
 
 ブロック間のパケットを **ニワトリ** が物理的に運びます。ニワトリは飛べず、障害物・水・モブで容易に止まり、プレイヤーの誤射で簡単に死にます &mdash; この性質がそのまま「IP 通信におけるパケットロスと遅延」のリアルなシミュレーションになります。

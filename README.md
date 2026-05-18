@@ -2,6 +2,8 @@
 
 **English** | [日本語](README.ja.md)
 
+![](./figs/CluckNet_demo.webp)
+
 > An implementation of [RFC 1149 "A Standard for the Transmission of IP Datagrams on Avian Carriers"](https://datatracker.ietf.org/doc/html/rfc1149) for Minecraft.
 
 Packets are physically carried between blocks by **chickens**. Their natural inability to fly, navigate obstacles, or survive mob attacks reproduces real IP-style packet loss and latency &mdash; obstacles, water, mobs and accidental player attacks all become legitimate sources of network failure.
