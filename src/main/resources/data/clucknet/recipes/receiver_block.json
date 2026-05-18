@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PLP",
+    "PEP",
+    "PPP"
+  ],
+  "key": {
+    "P": { "item": "minecraft:oak_planks" },
+    "L": { "item": "minecraft:lapis_block" },
+    "E": { "item": "minecraft:ender_eye" }
+  },
+  "result": {
+    "id": "clucknet:receiver_block",
+    "count": 1
+  }
+}

@@ -1,3 +1,18 @@
 {
-  "entity.clucknet.packet_chicken": "Packet Chicken"
+  "entity.clucknet.packet_chicken": "Packet Chicken",
+  "block.clucknet.sender_block": "Packet Sender",
+  "block.clucknet.receiver_block": "Packet Receiver",
+  "itemGroup.clucknet": "CluckNet",
+  "clucknet.gui.sender.destination": "Destination",
+  "clucknet.gui.sender.linked": "Linked → %s",
+  "clucknet.gui.sender.unlinked": "No destination set",
+  "clucknet.gui.sender.invalid": "Invalid coordinates",
+  "clucknet.gui.receiver.position": "Position: %s",
+  "clucknet.chicken.empty": "Empty payload-less chicken",
+  "clucknet.chicken.info": "Packet %s — chunk %d/%d (%d B) → %s",
+  "clucknet.chicken.preview": "Payload: \"%s\"",
+  "clucknet.chicken.nack": "NACK %s — missing %s → %s",
+  "clucknet.link.captured": "Receiver %s captured. Sneak-right-click a Sender to complete.",
+  "clucknet.link.no_token": "No Receiver captured. Sneak-right-click a Receiver first.",
+  "clucknet.link.completed": "Linked Sender %s → Receiver %s"
 }

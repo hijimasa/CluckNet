@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PRP",
+    "PFP",
+    "PPP"
+  ],
+  "key": {
+    "P": { "item": "minecraft:oak_planks" },
+    "R": { "item": "minecraft:redstone_block" },
+    "F": { "item": "minecraft:feather" }
+  },
+  "result": {
+    "id": "clucknet:sender_block",
+    "count": 1
+  }
+}

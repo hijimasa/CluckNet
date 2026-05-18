@@ -1,6 +1,12 @@
 package com.hijimasa.clucknet;
 
+import com.hijimasa.clucknet.block.ModBlockEntities;
+import com.hijimasa.clucknet.block.ModBlocks;
 import com.hijimasa.clucknet.entity.ModEntities;
+import com.hijimasa.clucknet.item.ModCreativeTabs;
+import com.hijimasa.clucknet.item.ModItems;
+import com.hijimasa.clucknet.menu.ModMenuTypes;
+import com.hijimasa.clucknet.network.CluckNetNetwork;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -22,7 +28,14 @@ public class CluckNet {
         modBus.addListener(this::setup);
         modBus.addListener(this::clientSetup);
 
+        ModBlocks.register(modBus);
+        ModItems.register(modBus);
+        ModBlockEntities.register(modBus);
+        ModCreativeTabs.register(modBus);
         ModEntities.register(modBus);
+        ModMenuTypes.register(modBus);
+
+        CluckNetNetwork.register();
 
         MinecraftForge.EVENT_BUS.register(this);
 

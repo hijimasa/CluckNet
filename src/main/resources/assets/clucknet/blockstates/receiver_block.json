@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "clucknet:block/receiver_block" }
+  }
+}

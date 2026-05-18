@@ -1,3 +1,18 @@
 {
-  "entity.clucknet.packet_chicken": "パケットニワトリ"
+  "entity.clucknet.packet_chicken": "パケットニワトリ",
+  "block.clucknet.sender_block": "パケット送信機",
+  "block.clucknet.receiver_block": "パケット受信機",
+  "itemGroup.clucknet": "CluckNet",
+  "clucknet.gui.sender.destination": "宛先",
+  "clucknet.gui.sender.linked": "リンク済み → %s",
+  "clucknet.gui.sender.unlinked": "宛先未設定",
+  "clucknet.gui.sender.invalid": "座標が不正",
+  "clucknet.gui.receiver.position": "位置: %s",
+  "clucknet.chicken.empty": "ペイロードなしの空のニワトリ",
+  "clucknet.chicken.info": "パケット %s — chunk %d/%d (%d B) → %s",
+  "clucknet.chicken.preview": "本文: \"%s\"",
+  "clucknet.chicken.nack": "NACK %s — 欠損 %s → %s",
+  "clucknet.link.captured": "受信機 %s を選択。送信機を sneak+右クリックで完了。",
+  "clucknet.link.no_token": "受信機が選択されていません。先に受信機を sneak+右クリックしてください。",
+  "clucknet.link.completed": "リンク完了: 送信機 %s → 受信機 %s"
 }
