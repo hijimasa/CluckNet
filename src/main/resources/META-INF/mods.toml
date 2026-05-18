@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="${mod_license}"
+issueTrackerURL="https://github.com/hijimasa/CluckNet/issues"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+displayURL="https://github.com/hijimasa/CluckNet"
+description='''${mod_description}
+
+An RFC 1149 (IP over Avian Carriers) implementation for Minecraft.
+Packets are physically carried by chickens between sender and receiver blocks.
+Packet loss, latency and routing follies are reproduced by the chickens themselves.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="forge"
+    mandatory=true
+    versionRange="[${forge_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
