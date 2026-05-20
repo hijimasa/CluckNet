@@ -288,6 +288,14 @@ Forge 1.20.6 + Java 21 では `jopt-simple` を `5.0.4` に固定する必要が
 
 ---
 
+## マルチプレイヤー
+
+CluckNet は dedicated server で動作します。サーバ側と、接続する全てのクライアントに Mod を入れてください &mdash; Forge の標準的なモデルです。Forge 以外の Mod 依存は一切ありません。
+
+1 点だけ注意: 受信通知 (`received: ...`) と `incomplete` 通知は **サーバの全プレイヤーに対して** broadcast されます。受信機の近くにいる人だけ、ではありません。ニワトリは本質的に公開メディアです &mdash; お遊び用途で使ってください、秘密通信用ではありません。
+
+---
+
 ## 対応バージョン & コントリビュート
 
 現状の CluckNet は **Minecraft 1.20.6 / Forge 50.1.x のみ** に対応しています。これは構造リファレンスとして使った上流の [`minecraft_ros2`](https://github.com/minecraft-ros2/minecraft_ros2) と MC バージョンを揃え、Java 21 / `LayeredDraw` への移行を 1 箇所にまとめるための選択です。

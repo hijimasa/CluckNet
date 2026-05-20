@@ -85,7 +85,15 @@ The trade-off: visually, the chat message often appears **before all the chicken
 - Minecraft Forge **50.1.x**
 - Java 21 (Gradle downloads it on first run if missing)
 
+No external mod dependencies beyond Forge itself.
+
 > CluckNet currently targets 1.20.6 / Forge only. Ports to 1.20.1 (Forge) or 1.21.x (NeoForge) as PRs are welcome — see the [GitHub repository](https://github.com/hijimasa/CluckNet) for details.
+
+## Multiplayer
+
+CluckNet works on dedicated servers. Install the mod on both the server and every connecting client — the standard Forge model.
+
+One thing worth knowing: receive and `incomplete` notifications are broadcast to **all players on the server**, not only to those near the receiver. Chickens are an inherently public medium — use CluckNet for fun, not for secrets.
 
 ## More
 

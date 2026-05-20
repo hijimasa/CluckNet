@@ -290,6 +290,14 @@ Design notes: [`../IPoAC_Minecraft_Mod_方針資料.md`](../IPoAC_Minecraft_Mod_
 
 ---
 
+## Multiplayer
+
+CluckNet works on dedicated servers. Install the mod on both the server and every connecting client — the standard Forge model. No additional mod dependencies beyond Forge itself.
+
+One thing worth knowing: receive and `incomplete` notifications are broadcast to **all players on the server**, not only to those near the receiver. Chickens are an inherently public medium &mdash; use CluckNet for fun, not for secrets.
+
+---
+
 ## Versions & contributions
 
 CluckNet currently targets **Minecraft 1.20.6 / Forge 50.1.x only**. This was chosen to match the upstream [`minecraft_ros2`](https://github.com/minecraft-ros2/minecraft_ros2) template used as a structural reference and to keep the Java 21 / `LayeredDraw` migration localised in one place.
