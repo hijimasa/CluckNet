@@ -51,7 +51,7 @@
 ## クイックスタート (開発用クライアント)
 
 ```bash
-git clone <this-repo-url> CluckNet
+git clone https://github.com/hijimasa/CluckNet.git
 cd CluckNet
 ./runClient.sh
 ```
@@ -285,6 +285,20 @@ Forge 1.20.6 + Java 21 では `jopt-simple` を `5.0.4` に固定する必要が
 | 7 (将来) | ROS 2 ブリッジ (任意、[`minecraft_ros2`](https://github.com/minecraft-ros2/minecraft_ros2) と対応) | — |
 
 設計メモ: [`../IPoAC_Minecraft_Mod_方針資料.md`](../IPoAC_Minecraft_Mod_%E6%96%B9%E9%87%9D%E8%B3%87%E6%96%99.md)
+
+---
+
+## 対応バージョン & コントリビュート
+
+現状の CluckNet は **Minecraft 1.20.6 / Forge 50.1.x のみ** に対応しています。これは構造リファレンスとして使った上流の [`minecraft_ros2`](https://github.com/minecraft-ros2/minecraft_ros2) と MC バージョンを揃え、Java 21 / `LayeredDraw` への移行を 1 箇所にまとめるための選択です。
+
+他バージョンへのポート PR は歓迎です。特に以下:
+- **1.20.1 / Forge** — 最も Mod が多い LTS 系列 (Java 17)
+- **1.21.x / NeoForge** — 現在の主力系列 (Java 21)
+
+ポートを始める場合は、`main` にマルチバージョン対応を入れず、別ブランチ (例: `mc-1.21.x-neoforge`) を切ってください。Forge ↔ NeoForge の API ギャップ (Payload API、レジストリ変更、`LayeredDraw` の再導入など) はジョーク Mod に対して重すぎ、コードベース共有はメリットよりも摩擦が大きいためです。
+
+Issue / 提案 / パッチ: <https://github.com/hijimasa/CluckNet/issues>
 
 ---
 

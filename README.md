@@ -51,7 +51,7 @@ Why chickens and not parrots?
 ## Quick start (development client)
 
 ```bash
-git clone <this-repo-url> CluckNet
+git clone https://github.com/hijimasa/CluckNet.git
 cd CluckNet
 ./runClient.sh
 ```
@@ -287,6 +287,20 @@ If you want guaranteed delivery, raise the parity chunk count (TODO &mdash; curr
 | 7 (future) | ROS 2 bridge (optional, mirror of [`minecraft_ros2`](https://github.com/minecraft-ros2/minecraft_ros2)) | — |
 
 Design notes: [`../IPoAC_Minecraft_Mod_方針資料.md`](../IPoAC_Minecraft_Mod_%E6%96%B9%E9%87%9D%E8%B3%87%E6%96%99.md) (in Japanese).
+
+---
+
+## Versions & contributions
+
+CluckNet currently targets **Minecraft 1.20.6 / Forge 50.1.x only**. This was chosen to match the upstream [`minecraft_ros2`](https://github.com/minecraft-ros2/minecraft_ros2) template used as a structural reference and to keep the Java 21 / `LayeredDraw` migration localised in one place.
+
+Pull requests porting the mod to other Minecraft versions are welcome, in particular:
+- **1.20.1 / Forge** — the most widely-modded LTS branch (Java 17)
+- **1.21.x / NeoForge** — the current active branch (Java 21)
+
+If you start a port, please target a separate branch (e.g. `mc-1.21.x-neoforge`) rather than trying to multi-version the `main` branch. The Forge ↔ NeoForge gap (Payload API, registry changes, `LayeredDraw` re-introduction, ...) is wide enough that a shared codebase is more friction than it is worth for a joke mod.
+
+Issues, ideas and patches: <https://github.com/hijimasa/CluckNet/issues>.
 
 ---
 
